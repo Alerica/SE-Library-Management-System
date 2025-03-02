@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Library</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Education Library</h1>
+                <p>Explore, Learn and Grow</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" id="bookDropdown">Book ▾</a>
+                        <ul class="dropdown-menu" id="dropdownMenu">
+                            <li><a href="#">Physical Book</a></li>
+                            <li><a href="#">E-Book</a></li>
+                        </ul>
+                    </li>                   
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    
+    
+
+    <section class="search-section">
+        <h2>Which book will you read today? 
+            <form class="search-form">
+                <input type="text" placeholder="Type Here">
+                <button type="submit"></button>
+            </form>
+        </h2>
+    </section>
+    
+
+    
+
+    <section class="stats">
+        <div class="stat-box">Total on Hand: <strong>1 Book</strong></div>
+        <div class="stat-box">Total Borrows: <strong>13 Books</strong></div>
+        <div class="stat-box">Total Read: <strong>47 Books</strong></div>
+        <div class="stat-box">Favorite: <strong>5 Books</strong></div>
+    </section>
+
+    <section class="buttons">
+        <button>Talk to Librarian</button>
+        <button>Find Collection</button>
+    </section>
+
+    <section class="newest-collection">
+        <h2>Newest Collection</h2>
+        <div class="collection-container">
+            <div class="book-card">
+                <img src="book1.jpg" alt="Basic Linear Algebra">
+                <p><strong>Mathematics</strong><br>Basic Linear Algebra, Second Edition</p>
+            </div>
+            <div class="book-card">
+                <img src="book2.jpg" alt="Crypto Trading Guide">
+                <p><strong>Crypto</strong><br>Crypto Trading Guide</p>
+            </div>
+            <div class="book-card">
+                <img src="book3.jpg" alt="Sistem Basis Data">
+                <p><strong>Database</strong><br>Sistem Basis Data, Modul 2</p>
+            </div>
+            <div class="book-card">
+                <img src="book4.jpg" alt="Siklus Pasar Saham">
+                <p><strong>Ekonomi</strong><br>Siklus Pasar Saham</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <section class="faq">
+            <h2>Common FAQs</h2>
+            <div class="faq-item">
+                <strong>Question:</strong> What actions can cause violations and fines?<br>
+                <span>Answer:</span> Late returns, lost or damaged books, or unauthorized access.
+            </div>
+            <div class="faq-item">
+                <strong>Question:</strong> Is there a limit to how many books I can borrow?<br>
+                <span>Answer:</span> Yes, up to 5 books at a time.
+            </div>
+            <div class="faq-item">
+                <strong>Question:</strong> How do I check my borrowed books and due dates?<br>
+                <span>Answer:</span> Log into your account to check.
+            </div>
+            <div class="faq-item">
+                <strong>Question:</strong> How long can I borrow a book?<br>
+                <span>Answer:</span> Up to 2 weeks with renewal.
+            </div>
+        </section>
+
+        <section class="news">
+            <h2>News</h2>
+            <div class="news-box">
+                <h3>Website Maintenance Notice</h3>
+                <p>The system will undergo maintenance on 27 February 2025, from 07:00 to 10:00.</p>
+            </div>
+            <div class="news-box">
+                <h3>New Book Arrivals Update</h3>
+                <p>New collections will be available by mid-March 2025.</p>
+            </div>
+            <div class="news-box">
+                <h3>Extended Return Deadlines</h3>
+                <p>Due to holidays, return deadlines are extended until April 2, 2025.</p>
+            </div>
+            <div class="news-box">
+                <h3>Digital Resources Upgrade</h3>
+                <p>Our e-book database will be upgraded on March 15, 2025.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Copyright © Education Library. All rights reserved</p>
+    </footer>
+</body>
+
+    
+<!-- Ini buat drop down -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const bookDropdown = document.getElementById("bookDropdown");
+            const dropdownMenu = document.getElementById("dropdownMenu");
+
+            bookDropdown.addEventListener("click", function (event) {
+                event.preventDefault(); 
+                dropdownMenu.classList.toggle("show");
+            });
+
+            document.addEventListener("click", function (event) {
+                if (!bookDropdown.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                    dropdownMenu.classList.remove("show");
+                }
+            });
+        });
+    </script>
+</html>
