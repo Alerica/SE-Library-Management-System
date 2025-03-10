@@ -23,3 +23,4 @@ Sistem peminjaman buku dinilai masih kurang efektif, contoh kasus apabila mahasi
 # Link Progress 1
 ### https://drive.google.com/file/d/1nVmmDRPUPABdlyhbsfzv-7tOFfo32tVf/view --> Use Case & Diagram
 ### https://drive.google.com/file/d/1uN8QUXcoQX0s3WUmC5EQxBwz-X_vbjQk/view --> Class diagram
+### https://docs.google.com/document/d/1GwGfNXTo9XPcNS4RHACdNIjGGBRdVmiZRAefcF6i_JQ/edit?usp=sharing --> Background, User Stories, Product Backlog, dan Pembobotan tugas
