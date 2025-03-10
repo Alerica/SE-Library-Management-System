@@ -19,3 +19,7 @@ Sistem peminjaman buku dinilai masih kurang efektif, contoh kasus apabila mahasi
 ### 2702283644 - Jackson
 ### 2702328970 - Richie Eleazar Isjwara
 ### 2702224950 - Alexander Ricky Budianto
+
+# Link Progress 1
+### https://drive.google.com/file/d/1nVmmDRPUPABdlyhbsfzv-7tOFfo32tVf/view --> Use Case & Diagram
+### https://drive.google.com/file/d/1uN8QUXcoQX0s3WUmC5EQxBwz-X_vbjQk/view --> Class diagram
