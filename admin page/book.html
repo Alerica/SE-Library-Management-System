@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="book.css">
+    <script defer src="adminDashboard.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+        <div class="sidebar-content">
+            <h2>Education Library</h2>
+            <p>Explore, Learn and Grow</p>
+            <a href="adminDashboard.html">Dashboard</a>
+            <a href="book.html">Book</a>
+            <a href="user.html">User</a>
+            <a>Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Book List</h1>
+        <a href="addBook.html" class="add-book">Adding Book</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Publisher</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="book1.jpeg" alt="Book 1"></td>
+                    <td>Sistem Basis Data</td>
+                    <td>Agnes Novita Ida S.</td>
+                    <td>Gramedia</td>
+                    <td class="available">Available</td>
+                    <td>
+                        <div class="button-container">
+                            <button class="edit-btn"><img src="editIcon.png" alt="Edit" width="32" height="32"></button>
+                            <button class="delete-btn"><img src="deleteIcon.png" alt="Delete" width="32" height="32"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="book2.jpeg" alt="Book 2"></td>
+                    <td>Crypto Trading Guide</td>
+                    <td>Akademi Crypto</td>
+                    <td>Kompass Media</td>
+                    <td class="not-available">Not Available</td>
+                    <td>
+                        <div class="button-container">
+                            <button class="edit-btn"><img src="editIcon.png" alt="Edit" width="32" height="32"></button>
+                            <button class="delete-btn"><img src="deleteIcon.png" alt="Delete" width="32" height="32"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="book3.jpeg" alt="Book 3"></td>
+                    <td>Siklus Pasar Saham</td>
+                    <td>Raymond Budiman, CFA</td>
+                    <td>Tempo.Co</td>
+                    <td class="available">Available</td>
+                    <td>
+                        <div class="button-container">
+                            <button class="edit-btn"><img src="editIcon.png" alt="Edit" width="32" height="32"></button>
+                            <button class="delete-btn"><img src="deleteIcon.png" alt="Delete" width="32" height="32"></button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

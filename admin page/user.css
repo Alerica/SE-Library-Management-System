@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 60px;
+    height: 100vh;
+    background-color: #1d252b;
+    overflow-x: hidden;
+    transition: 0.3s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+}
+
+.sidebar .sidebar-content {
+    display: none;
+    padding: 15px;
+    color: white;
+}
+
+.sidebar.open {
+    width: 250px;
+}
+
+.sidebar.open .sidebar-content {
+    display: block;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.sidebar p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar a:hover, .sidebar a.active {
+    background-color: #343a40;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 60px;
+    transition: 0.3s;
+}
+
+.sidebar.open + .content {
+    margin-left: 250px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Button Styling */
+.add-user {
+    text-decoration: none;
+    background-color: #8EA8DD;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 15px;
+}
+
+.add-user:hover {
+    background-color: #2563eb;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+td img {
+    width: 50px;
+    height: auto;
+    border-radius: 0px;
+}
+
+th {
+    background: #f0f0f0;
+}
+
+/* Action Buttons */
+.edit-btn, .delete-btn {
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 16px;
+    background: none;
+}
+
+.delete-btn {
+    color: red;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0
+}
+
+.edit-btn {
+    color: blue;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0
+}
+
+.button-container {
+    display: flex;
+    gap: 0; 
+}

@@ -78,14 +78,14 @@ button:hover {
 .remember {
     display: flex;
     align-items: center;
-    gap: 8px; 
+    gap: 8px;
     justify-content: flex-start;
     width: 100%;
     margin-top: 10px;
 }
 
 .remember input {
-    width: 16px; 
+    width: 16px;
     height: 16px;
     margin: 0;
 }
@@ -93,7 +93,7 @@ button:hover {
 .remember label {
     font-size: 14px;
     line-height: 16px;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .remember input {

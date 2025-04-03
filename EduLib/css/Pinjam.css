@@ -1,0 +1,212 @@
+/* Header */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222;
+    color: white;
+    padding: 15px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 14px;
+    color: #bbb;
+}
+
+
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a.active {
+    background-color: #333;
+}
+
+.navbar a:hover {
+    opacity: 80%;
+}
+
+.navbar a:active {
+    opacity: 40%;
+}
+
+/* Dropdown Menu - Hidden by Default */
+.dropdown-menu {
+    display: none;
+    /* Hide by default */
+    position: absolute;
+    background-color: #222;
+    border-radius: 5px;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    padding: 5px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(-10px);
+    /* Move slightly up */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Smooth transition */
+    z-index: 1000;
+    align-items: center;
+}
+
+/* When 'show' class is added, make it visible */
+.dropdown-menu.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    /* Moves to normal position */
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+    border-radius: 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #444;
+}
+
+/* Show dropdown on click */
+.dropdown-menu.show {
+    display: block;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    height: 100%;
+}
+
+
+
+
+
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.book-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin: 50px;
+}
+
+.book-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 900px;
+    height: 280px;
+    margin: 0 auto;
+}
+
+
+.book-cover {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.book-info {
+    flex: 1; /* Membuat bagian teks mengambil sisa ruang */
+    display: flex;
+    flex-direction: column; /* Teks dalam kolom */
+    justify-content: flex-start; /* Memastikan teks mulai dari atas */
+    position: relative;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.status.terpinjam {
+    background: #ffeeba;
+    color: #856404;
+}
+.action-btn {
+    width: auto;
+
+    padding: 12px 20px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    background-color: rgb(241, 210, 132);
+    color: #121212;
+    font-weight: bolder;
+    margin: 0 auto;
+    display: block;
+    right: 0;
+    position: absolute;
+}
+
+.action-btn:hover {
+    background-color: rgba(241, 210, 132, 0.356);
+    transform: translateY(-2px);
+}
+
+.breadcrumb {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    padding: 20px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    margin: 0 5px;
+}

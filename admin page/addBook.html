@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Librarian</title>
+    <link rel="stylesheet" href="addBook.css">
+    <script defer src="adminDashboard.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+        <div class="sidebar-content">
+            <h2>Education Library</h2>
+            <p>Explore, Learn and Grow</p>
+            <a href="adminDashboard.html">Dashboard</a>
+            <a href="book.html">Book</a>
+            <a href="user.html">User</a>
+            <a>Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Adding Book</h1>
+        <p class="instruction">Please fill in the column below</p>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="ISBN">ISBN</label>
+                    <input type="text" id="ISBN" value="14153652472266" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text" id="phone" value="Andry Hakim" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="published">Published Year</label>
+                    <input type="text" id="published" value="2025" readonly>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="status">Set Status Book</label>
+                    <input type="text" id="status" value="Available" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="publisher">Publisher</label>
+                    <input type="text" id="publisher" value="Gramedia" readonly>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="How To Find Undervalue Assets in Market Stock IHSG" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="description">Description</label>
+                <input type="text" id="description" placeholder="Description of book" readonly>
+            </div>
+
+            <p class="note">
+                Books that will be published to this library managemnet system must comply with the guidelines and not violate any rules. 
+                Make sure that the books uploaded di not contain SARA, hatred, and other things that can cause harm to certain parties.
+            </p>
+
+            <button type="submit" class="submit-btn">Publish book</button>
+        </form>
+    </div>
+
+</body>
+</html>

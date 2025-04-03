@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Librarian</title>
+    <link rel="stylesheet" href="addLibrarian.css">
+    <script defer src="adminDashboard.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+        <div class="sidebar-content">
+            <h2>Education Library</h2>
+            <p>Explore, Learn and Grow</p>
+            <a href="adminDashboard.html">Dashboard</a>
+            <a href="book.html">Book</a>
+            <a href="user.html">User</a>
+            <a>Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Adding Librarian</h1>
+        <p class="instruction">Please fill in the column below</p>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" value="Kalimashada" readonly>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" value="628 1234 5678" readonly>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" readonly>
+            </div>
+
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="****************" readonly>
+            </div>
+
+            <p class="note">
+                Make sure that the librarian has agreed to the agreement that was agreed upon during the employment contract. 
+                The username and password are confidential and must not be distributed, only given to the librarian for access.
+            </p>
+
+            <button type="submit" class="submit-btn">Create Librarian Account</button>
+        </form>
+    </div>
+
+</body>
+</html>

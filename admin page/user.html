@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <link rel="stylesheet" href="user.css">
+    <script defer src="adminDashboard.js"></script>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+        <div class="sidebar-content">
+            <h2>Education Library</h2>
+            <p>Explore, Learn and Grow</p>
+            <a href="adminDashboard.html">Dashboard</a>
+            <a href="book.html">Book</a>
+            <a href="user.html">User</a>
+            <a>Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Librarian List</h1>
+        <a href="addLibrarian.html" class="add-user">Adding New Librarian</a>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Timothy Roland</td>
+                    <td>timothyroland@gmail.com</td>
+                    <td>0812 3456 7890</td>
+                    <td>
+                        <div class="button-container">
+                            <button class="edit-btn"><img src="editIcon.png" alt="Edit" width="32" height="32"></button>
+                            <button class="delete-btn"><img src="deleteIcon.png" alt="Delete" width="32" height="32"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kalimashada</td>
+                    <td>kalimasada@gmail.com</td>
+                    <td>0898 7654 3210</td>
+                    <td>
+                        <div class="button-container">
+                            <button class="edit-btn"><img src="editIcon.png" alt="Edit" width="32" height="32"></button>
+                            <button class="delete-btn"><img src="deleteIcon.png" alt="Delete" width="32" height="32"></button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h1>User List</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Sulianto</td>
+                    <td>tradewhitsui@gmail.com</td>
+                    <td>0812 3456 7890</td>
+                    <td>
+                        <div class="button-container">
+                            <button class="edit-btn"><img src="editIcon.png" alt="Edit" width="32" height="32"></button>
+                            <button class="delete-btn"><img src="deleteIcon.png" alt="Delete" width="32" height="32"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>GiganticGCR</td>
+                    <td>Gigantic@gmail.com</td>
+                    <td>0898 7654 3210</td>
+                    <td>
+                        <div class="button-container">
+                            <button class="edit-btn"><img src="editIcon.png" alt="Edit" width="32" height="32"></button>
+                            <button class="delete-btn"><img src="deleteIcon.png" alt="Delete" width="32" height="32"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Vitalik Buterin</td>
+                    <td>vitaliketh@gmail.com</td>
+                    <td>0898 7654 3210</td>
+                    <td>
+                        <div class="button-container">
+                            <button class="edit-btn"><img src="editIcon.png" alt="Edit" width="32" height="32"></button>
+                            <button class="delete-btn"><img src="deleteIcon.png" alt="Delete" width="32" height="32"></button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Zelensky</td>
+                    <td>zelenski@gmail.com</td>
+                    <td>0898 7654 3210</td>
+                    <td>
+                        <div class="button-container">
+                            <button class="edit-btn"><img src="editIcon.png" alt="Edit" width="32" height="32"></button>
+                            <button class="delete-btn"><img src="deleteIcon.png" alt="Delete" width="32" height="32"></button>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
