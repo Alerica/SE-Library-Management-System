@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 60px;
+    height: 100vh;
+    background-color: #1d252b;
+    overflow-x: hidden;
+    transition: 0.3s;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 20px;
+}
+
+.sidebar .sidebar-content {
+    display: none;
+    padding: 15px;
+    color: white;
+}
+
+.sidebar.open {
+    width: 250px;
+}
+
+.sidebar.open .sidebar-content {
+    display: block;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.sidebar p {
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar a:hover {
+    background-color: #343a40;
+}
+
+.menu-toggle {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 60px;
+    transition: 0.3s;
+}
+
+.sidebar.open+.content {
+    margin-left: 250px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.stats-container {
+    display: flex;
+    gap: 20px;
+}
+
+.stat-box {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    min-width: 200px;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.stat-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.stat-value {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+.action-group {
+    display: flex;
+    gap: 5px;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    transition: opacity 0.3s;
+    outline: none !important;
+}
+
+.btn:hover {
+    opacity: 0.6;
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.approve-btn {
+    color: #28a745;
+}
+
+.reject-btn {
+    color: #dc3545;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
